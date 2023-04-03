@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Client</title>
+
+</head>
+
+<body>
+
+    <h2>Phone Client</h2>
+
+    <label>Enter Name: </label>
+    <input type="text" id="inputName" />
+
+    <label>Enter Room Code: </label>
+    <input type="text" id="inputRoomCode" pattern="[a-zA-Z]+" />
+
+    <button id="buttonJoinRoom">JOIN!</button>
+    <p id="pJoinRoom"></p>
+
+    <div id="divMessenger" hidden="true">
+        <input id="inputMessenger" />
+        <button id="buttonSendMessenger">Send</button>
+        <button id="buttonSendMessengerHost">Send To Game Host Only</button>
+    </div>
+
+    <div id="divRelay">
+
+    </div>
+
+</body>
+
+<script src="actions/joinRoom.js"></script>
+<script src="actions/fictionary.js"></script>
+<script src="actions/relay.js"></script>
+<script src="actions/api.js"></script>
+</html>
